@@ -1,0 +1,16 @@
+{
+  "id": "mig_cn4fal56bshmhe2g10f0",
+  "parentID": "mig_cn4fa725jh88nn7fh8o0",
+  "checksum": "1:7081f73dcc711e46f2ee55db86e86270296c1cb247b8b4894bf4fbacc558debc",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "Name",
+          "type": "text"
+        },
+        "table": "Contacts"
+      }
+    }
+  ]
+}

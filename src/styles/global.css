@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-black;
+}
+
+.dark body {
+  @apply bg-black text-white;
+}
+
+h1, h2, p {
+  @apply text-inherit;
+}
+.blog-post-title {
+  @apply text-black;
+}
+
+.dark .blog-post-title {
+  @apply text-white;
+}
+

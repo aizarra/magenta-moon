@@ -1,0 +1,13 @@
+{
+  "id": "mig_cn4gb256bshmhe2g10o0",
+  "parentID": "mig_cn4fd4hu68u8tmtqiom0",
+  "checksum": "1:3c7f16b67e0d65c380f1d9ece31b94173f7b92d4b3ce71cd3d1b595a050edb22",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "Name",
+        "table": "Contacts"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+---
+import Card from "./Card.astro";
+import type { Props as CardProp } from "./Card.astro";
+
+type Props = {
+  cards: CardProp[]; // accepts an array of CardProps
+};
+
+// Retrieve the cards prop
+const { cards } = Astro.props;
+---
+<div class="flex flex-wrap justify-center gap-4">
+    {cards.map((card) => <Card {...card} />)} 
+  </div>

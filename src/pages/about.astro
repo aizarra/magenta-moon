@@ -1,0 +1,37 @@
+---
+import Main from "../components/Main.astro";
+import AboutContent from "../content/posts/about.md";
+const profilePicture = "https://i.imgur.com/kWXI5VE.jpeg";
+// import ContactForm from "../components/ContactForm.svelte";
+import Layout from "../layouts/Layout.astro";
+// import ContactForm from "../components/ContactForm.jsx";
+import ContactForm from "../components/ContactForm.astro";
+const {
+  title = "About Anna Fisher",
+  description = "About Anna Fisher personalsite",
+} = Astro.props;
+---
+
+<Layout>
+  <Main>
+    <div class="flex items-start space-x-6 ml-20 mt-8">
+      <img
+        src={profilePicture}
+        alt="Astronaut Anna Fisher"
+        class="w-100px h-100px rounded-full border border-gray-300"
+      />
+
+      <div class="prose font-roboto-mono text-inherit">
+        <h2 class="text-xxl leading-tight mt-0 mb-1 text-inherit">
+          About Astronaut Anna Fischer
+        </h2>
+        <p class="text-base leading-snug mt-5 mb-0">
+          I help extend your limits
+        </p>
+        <AboutContent />
+
+        <ContactForm client:load />
+      </div>
+    </div>
+  </Main>
+</Layout>

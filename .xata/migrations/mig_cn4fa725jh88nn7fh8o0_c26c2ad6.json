@@ -1,0 +1,11 @@
+{
+  "id": "mig_cn4fa725jh88nn7fh8o0",
+  "checksum": "1:c26c2ad662d96d7e81fc11fa0a8e06a7a940633496644ae1f2e3e70e8b361337",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Contacts"
+      }
+    }
+  ]
+}

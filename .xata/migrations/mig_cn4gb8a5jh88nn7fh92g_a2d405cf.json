@@ -1,0 +1,18 @@
+{
+  "id": "mig_cn4gb8a5jh88nn7fh92g",
+  "parentID": "mig_cn4gb256bshmhe2g10o0",
+  "checksum": "1:a2d405cf5a0530811e3e9e8997852589298b47b3d5a568377446dcef4b437f54",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "Name",
+          "type": "text",
+          "notNull": true,
+          "defaultValue": ""
+        },
+        "table": "Contacts"
+      }
+    }
+  ]
+}
