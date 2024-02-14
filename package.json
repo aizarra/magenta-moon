@@ -10,8 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.2",
-    "@astrojs/markdoc": "^0.8.3",
+    "@astrojs/check": "^0.5.4",
+    "@astrojs/markdoc": "^0.9.0",
     "@astrojs/react": "^3.0.10",
     "@astrojs/svelte": "^5.0.3",
     "@astrojs/tailwind": "^5.1.0",
@@ -19,7 +19,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.10",
     "@xata.io/client": "^0.29.0",
-    "astro": "^4.3.5",
+    "astro": "^4.3.7",
     "date-fns": "^3.3.1",
     "kwesforms": "^2.2.6",
     "react": "^18.2.0",
