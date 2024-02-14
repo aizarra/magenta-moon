@@ -1,6 +1,5 @@
 ---
 const profilePicture = "https://i.imgur.com/kWXI5VE.jpeg";
-import "@fontsource/roboto-mono";
 import Layout from "../layouts/Layout.astro";
 import Main from "../components/Main.astro";
 import Cards from "../components/Cards.astro";
@@ -22,7 +21,7 @@ const latestPosts: CollectionEntry<"posts">[] = await getCollection(
 
 <Layout>
   <Main>
-    <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6 ml-20 mt-8">
+    <div class="flex items-start space-x-6 ml-20 mt-8">
       <img
         src={profilePicture}
         alt="Astronaut Anna Fisher"
@@ -33,16 +32,12 @@ const latestPosts: CollectionEntry<"posts">[] = await getCollection(
         <h1 class="text-xxl leading-tight mt-0 mb-1 text-inherit">
           Astronaut Anna Fischer
         </h1>
-        <h2 class="text-lg leading-snug mt-0 mb-1 text-inherit">
+        <h2 class="text-lg leading-snug mt-0 mb-10 text-inherit">
           Explorer of outer worlds
         </h2>
-        <h3 class="text-base leading-snug mt-5 mb-0">
-          I help extend your limits
-        </h3>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
     <Cards
       class="prose font-roboto-mono text-inherit"
       cards={[
@@ -56,24 +51,23 @@ const latestPosts: CollectionEntry<"posts">[] = await getCollection(
           to: "/Teaching",
           title: "Teaching",
           description: "Courses I am teaching",
-          image: "public/images/teacherbadge.png",
+          image: "public/images/fischer.png",
         },
         {
           to: "/BeyondTheStars",
-          title: "Beyond",
+          title: "Beyond The Stars",
           description: "Besides work",
           image: "public/images/kite.jpg",
         },
       ]}
     />
-    </div>
-    
-    <div class="mt-10 ml-40 prose font-roboto-mono text-inherit">
+
+    <div class="mt-10 ml-48 prose font-roboto-mono text-inherit">
       <h2>Latest Blog Posts 🚀</h2>
       <ul class="blog-post-title mt-0">
         {
           latestPosts.map((post) => (
-            <li class="blog-post-title" >
+            <li class="blog-post-title mt-0">
               <a
                 href={`/blog/${post.data.title.replace(/\s+/g, "-").toLowerCase()}`}
               >

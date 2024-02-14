@@ -4,30 +4,35 @@ import Footer from "../components/Footer.astro";
 import NavigationBar from "../components/NavigationBar.astro";
 
 export interface Props {
-    title?: string
-    description?: string
+  title?: string;
+  description?: string;
 }
 
 const {
-    title = "Anna Fisher Personalsite",
-    description = "An astronaut's explorations into outer and inner worlds",
-} = Astro.props
+  title = "Anna Fisher Personalsite",
+  description = "An astronaut's explorations into outer and inner worlds",
+} = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="min-h-screen">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="/src/styles/global.css">
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="generator" content={Astro.generator} />
-        <meta name="description" content={description} />
-        <title>{title}</title>
-        <!-- og meta tags -->
-      </head>
-      <body >
-        <NavigationBar/>
-        <slot/>
-        <Footer/>
-      </body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <!-- og meta tags -->
+  </head>
+  <body>
+    <body class="flex flex-col min-h-screen">
+      <NavigationBar />
+      <div class="container ml-25 px-4">
+        <slot />
+        <Footer />
+      </div>
+    </body>
+  </body>
+</html>

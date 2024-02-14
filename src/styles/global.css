@@ -13,11 +13,39 @@ body {
 h1, h2, p {
   @apply text-inherit;
 }
-.blog-post-title {
+.blog-post-title a {
   @apply text-black;
 }
 
-.dark .blog-post-title {
+.dark .blog-post-title a {
   @apply text-white;
 }
 
+.footer-link {
+  @apply text-black;
+}
+
+.dark .footer-link {
+  @apply text-white;
+}
+
+h2 {
+  @apply text-black;
+}
+
+.dark h2 {
+  @apply text-white;
+}
+.card {
+  @apply bg-white border-gray-300;
+  /* Add your existing card styles, like border, padding, etc. */
+}
+
+.dark .card {
+  @apply bg-gray-800 border-gray-600;
+  /* You can adjust the background and border colors as needed */
+}
+.dark .card {
+  @apply bg-gray-800 border-gray-600 shadow-md;
+  /* Adjust the shadow to be more visible in dark mode */
+}

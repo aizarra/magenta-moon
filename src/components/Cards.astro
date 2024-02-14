@@ -9,6 +9,7 @@ type Props = {
 // Retrieve the cards prop
 const { cards } = Astro.props;
 ---
-<div class="flex flex-wrap justify-center gap-4">
-    {cards.map((card) => <Card {...card} />)} 
-  </div>
+
+<div class="flex flex-wrap ml-44 -mx-2">
+  {cards.map((card) => <Card {...card} />)}
+</div>
