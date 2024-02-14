@@ -1,11 +1,12 @@
 ---
 import Main from "../components/Main.astro";
-import AboutContent from "../content/posts/about.md";
 const profilePicture = "https://i.imgur.com/kWXI5VE.jpeg";
 // import ContactForm from "../components/ContactForm.svelte";
 import Layout from "../layouts/Layout.astro";
 // import ContactForm from "../components/ContactForm.jsx";
 import ContactForm from "../components/ContactForm.astro";
+import About from "../content/standlone/about.md";
+
 const {
   title = "About Anna Fisher",
   description = "About Anna Fisher personalsite",
@@ -22,13 +23,14 @@ const {
       />
 
       <div class="prose font-roboto-mono text-inherit">
-        <h2 class="text-xxl leading-tight mt-0 mb-1 text-inherit">
+        <h2 class="text-xxl leading-tight mt-0 mb-1">
           About Astronaut Anna Fischer
         </h2>
-        <p class="text-base leading-snug mt-5 mb-0">
+        <h3 class="text-base leading-snug mt-5 mb-10">
           I help extend your limits
-        </p>
-        <!-- <AboutContent /> -->
+        </h3>
+
+        <About />
 
         <ContactForm client:load />
       </div>
