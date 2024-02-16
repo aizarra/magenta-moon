@@ -7,5 +7,6 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react(), markdoc(), svelte()]
+  integrations: [tailwind(), react(), markdoc(), svelte()],
+  output: 'server'
 });

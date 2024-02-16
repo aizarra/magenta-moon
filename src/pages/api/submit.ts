@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { XataClient } from '../../xata';
 
-export const post: APIRoute = async ({ request, redirect }) => {
+export const POST: APIRoute = async ({ request, redirect }) => {
   console.log("API route /api/submit has been hit");
   const client = new XataClient({ apiKey: import.meta.env.XATA_API_KEY });
   const formData = await request.formData();

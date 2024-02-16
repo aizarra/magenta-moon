@@ -1,14 +1,21 @@
 ---
 import Main from "../components/Main.astro"
 import Layout from "../layouts/Layout.astro"
+const rocketImage= "/public/images/rocket.png";
 ---
 
 <Layout>
   <Main>
-    <h1>Thank You for reaching out!</h1>
-    <p class="text-zinc-900 text-2xl mb-24 max-sm:mb-14">
-      We appreciate you reaching out and we'll get back to you as soon as we
+    <img src={rocketImage} class="w-100px h-100px mx-auto mt-20" alt="Rocket" />
+    
+    <p class="mt-10 ml-48 text-zinc-900 text-2xl mb-24 max-sm:mb-14">
+      Thank You for reaching out! We'll get back to you as soon as we
       can.
     </p>
   </Main>
+  <script>
+    setTimeout(() => {
+      window.location.href = '/';
+    }, 3000); // Redirect after 5 seconds
+  </script>
 </Layout>
