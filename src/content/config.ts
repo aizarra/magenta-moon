@@ -9,8 +9,8 @@ const postsCollection = defineCollection({
             Date: z
                 .string()
                 .transform((str) => format(new Date(str), "MMMM d, yyyy")),
-            poster: z.string(),
-            layout: z.string(),
+            poster: image(),
+          
         }),
 });
 

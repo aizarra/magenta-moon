@@ -67,7 +67,7 @@ const latestPosts: CollectionEntry<"posts">[] = await getCollection(
       <ul class="blog-post-title mt-0">
         {
           latestPosts.map((post) => (
-            <li class="blog-post-title mt-0">
+            <li>
               <a href={`/blog/${post.slug}`}>{post.data.title}</a>
             </li>
           ))
