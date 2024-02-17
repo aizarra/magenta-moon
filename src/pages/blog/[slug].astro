@@ -1,0 +1,27 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getEntryBySlug } from "astro:content";
+
+
+const slug = Astro.params.slug;
+console.log("Slug:", slug);
+
+if (typeof slug !== 'string') {
+  return Astro.redirect("/404");
+}
+const post = await getEntryBySlug("posts", slug);
+console.log("Post:", post);
+
+if (!post) {
+  return Astro.redirect("/404");
+}
+const { Content } = await post.render();
+---
+
+<Layout>
+  <article class="max-w-4xl mx-auto p-4">
+    <div class="prose prose-xl text-inherit">
+      <Content />
+    </div>
+  </article>
+</Layout>
