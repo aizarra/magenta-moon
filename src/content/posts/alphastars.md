@@ -2,8 +2,8 @@
 layout: "../../layouts/Blog.astro"
 poster: "/public/images/alphastar.webp"
 title: "Alphastars my new challenge"
-subtitle: "I am starting a new challenge"
-Date: "2023-12-23"
+subtitle: "sdsdsd"
+Date: "08/10/2021"
 ---
 
 In the vast expanse of the cosmos, amidst the glittering stars and swirling galaxies, lies a realm waiting to be explored: AlphaStars. This ambitious exploration project, spearheaded by a collaboration of leading space agencies and private enterprises, aims to unlock the secrets of distant star systems and push the boundaries of human knowledge to new frontiers.

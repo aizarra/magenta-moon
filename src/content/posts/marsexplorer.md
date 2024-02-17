@@ -2,11 +2,9 @@
 layout: "../../layouts/Blog.astro"
 poster: "/public/images/explorer.jpg"
 title: "The contributions of the Mars Explorer vehicle"
-subtitle: "The Mars Explorer vehicle has allowed researches to discover Mars"
+subtitle: ""
 Date: "2023-02-23"
 ---
-The Mars Explorer Vehicle: Pioneering the Red Planet
-
 In the vast expanse of space, one destination has captured the imagination of scientists and dreamers alike: Mars. The Mars Explorer Vehicle stands as a testament to humanity's unwavering commitment to explore and understand this enigmatic world. Designed to traverse the rugged Martian terrain, the Mars Explorer Vehicle represents the pinnacle of engineering ingenuity and technological prowess.
 
 Equipped with state-of-the-art instruments and cutting-edge robotics, the Mars Explorer Vehicle is more than just a machine; it is a scientific powerhouse on wheels. Its rugged exterior shields it from the harsh Martian environment, while its intricate instrumentation allows it to conduct a wide array of experiments and analyses.
