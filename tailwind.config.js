@@ -13,11 +13,14 @@ export default {
       fontFamily: {
         "roboto-mono": ['"Roboto Mono"', "monospace"], // Add this line
       },
-      fontSize: {
-        'blog-title': '2.25rem', // Example size, adjust as needed
-      },
-      fontWeight: {
-        'blog-title': '700', // Example weight, adjust as needed
+      // fontSize: {
+      //   "blog-title": "2.25rem", // Example size, adjust as needed
+      // },
+      // fontWeight: {
+      //   "blog-title": "700", // Example weight, adjust as needed
+      // },
+      aspectRatio: {
+        thumbnail: "1.5",
       },
     },
   },

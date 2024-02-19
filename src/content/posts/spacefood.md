@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Blog.astro"
-poster: "/public/images/pulse.png"
+# layout: "../../layouts/Blog.astro"
+image: "/images/meals.webp"
 title: "Delicious Space Meals 🍕"
 subtitle: "What do you get when you eat in space?"
 Date: "2022-02-10"
