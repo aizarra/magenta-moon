@@ -4,38 +4,41 @@ import { Image } from "astro:assets";
 
 type Props = {
   post: CollectionEntry<"posts">;
+  postId: string;
 };
 
-const { post } = Astro.props;
+const { post, postId } = Astro.props;
 ---
 
-<article class="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+<article class="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-800">
   <a
     href={`/blog/${post.slug}`}
     aria-label={`Read more about ${post.data.title}`}
   >
     <Image
+      transition:name="{`post-image-${post.id}`}"
       src={post.data.image}
       alt={post.data.title}
       width={600}
       height={600}
       format="webp"
-      class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+      class="aspect-thumbnail mb-6 rounded-2xl object-cover shadow-xl"
     />
   </a>
 
   <a
+    transition:name="{`post-title-${post.id}`}"
     href={`/blog/${post.slug}`}
-    class="text-2xl mb-4 font-semibold hover:text-blue-600 transition-colors text-inherit"
+    class="mb-4 text-2xl font-semibold text-inherit transition-colors hover:text-blue-600"
   >
     {post.data.title}
   </a>
 
-  <div class="text-sm text-gray-500 mb-2 dark:text-gray-400">
+  <div class="mb-2 text-sm text-gray-500 dark:text-gray-400">
     {post.data.Date}
   </div>
 
-  <p class="text-gray-700 text-lg mb-4 line-clamp-2 dark:text-gray-300">
+  <p class="mb-4 line-clamp-2 text-lg text-gray-700 dark:text-gray-300">
     {post.body}
   </p>
 </article>

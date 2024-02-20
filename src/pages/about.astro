@@ -5,7 +5,7 @@ const profilePicture = "https://i.imgur.com/kWXI5VE.jpeg";
 import Layout from "../layouts/Layout.astro";
 // import ContactForm from "../components/ContactForm.jsx";
 import ContactForm from "../components/ContactForm.astro";
-import About from "../content/standlone/about.md";
+import AboutContent from "../content/standlone/about.md";
 
 const {
   title = "About Anna Fisher",
@@ -30,7 +30,7 @@ const {
           I help extend your limits
         </h3>
 
-        <About />
+        <AboutContent />
 
         <ContactForm client:load />
       </div>

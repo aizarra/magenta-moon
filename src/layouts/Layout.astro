@@ -2,6 +2,7 @@
 import "@fontsource/roboto-mono";
 import Footer from "../components/Footer.astro";
 import NavigationBar from "../components/NavigationBar.astro";
+import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
   title?: string;
@@ -24,15 +25,16 @@ const {
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <ViewTransitions />
     <!-- og meta tags -->
   </head>
-  <body>
-    <body class="flex flex-col min-h-screen">
-      <NavigationBar />
-      <div class="container ml-25 px-4">
+  <body class="flex flex-col min-h-screen">
+    <NavigationBar />
+    <main class="flex-grow">
+      <div class="container mx-auto px-4">
         <slot />
-        <Footer />
       </div>
-    </body>
+    </main>
+    <Footer />
   </body>
 </html>
